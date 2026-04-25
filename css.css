@@ -1,0 +1,120 @@
+body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a1f2c, #49308d, #7c2222);
+        }
+        header {
+            background: url(ChatGPT\ Image\ 20\ Mar\ 2026\ 20_54_23.png) center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .slider {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .baharat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .baharat {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .baharat img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .qr {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .qr img {
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #00c6ff;
+            transition: 0.3s;
+        }
+
+        .qr img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #f39c12;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
