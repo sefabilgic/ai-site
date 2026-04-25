@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header>
+        <h1>🌿 Baharat Dünyası</h1>
+        <p>Türk mutfağının eşsiz baharat yolculuğu</p>
+    </header>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="#baharatlar">Baharatlar</a>
+        <a href="#video">Video</a>
+    </nav>
+    <div class="container">
+        <div class="slider">
+            <div class="slide active" style="background-image:url('images/animationfoto.jfif')"></div>
+            <div class="slide" style="background-image:url('images/animationfoto2.jfif')"></div>
+            <div class="slide"
+                style="background-image:url('https://images.unsplash.com/photo-1514512364185-4c2b40c3c7a3')"></div>
+        </div>
+        <div class="card" id="baharatlar">
+            <h2>🌶️ Baharat Galerisi</h2>
+            <p>
+            <h3>Zencefil</h3>
+            Zencefil, bağışıklık sistemini güçlendiren ve soğuk algınlığına iyi gelen bir bitkidir. Mideyi
+            rahatlatır ve sindirimi destekler ve mide bulantısını azaltmaya yardımcı olur. Özellikle soğuk algınlığında vücudu
+            destekler ve hafif iltihap giderici etkisi bulunur. Kan dolaşımını hızlandırabilir ve vücudu ısıtıcı
+            etkisiyle bilinir. Aynı zamanda bağışıklık sisteminin daha aktif çalışmasına katkı sağlar.Çay olarak sıkça tüketilir.
+
+            <h3>Zerdeçal</h3>
+            Kurkumin maddesi sayesinde güçlü bir antioksidandır. İltihap azaltıcı etkisiyle bağışıklık sistemini
+            destekler ve hücreleri korumaya yardımcı olur. Eklem sağlığını destekleyebilir ve kronik iltihap
+            durumlarında yardımcı olabilir. Düzenli kullanımda vücut direncini artırabilir.</p>
+        </div>
+    </div>
+
+    <div class="card" id="video">
+        <h2>🎥 Proje Videosu</h2>
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="card qr">
+        <h2>📱 QR Kod ile Erişim</h2>
+        <img src="Baharat_Müzesi-1024.png">
+        <p>Telefonunuzla tarayarak siteye erişin</p>
+    </div>
+
+    </div>
+    <footer>
+        <p>© 2026 Baharat Dünyası</p>
+    </footer>
+
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let i = 0;
+        setInterval(() => { slides[i].classList.remove('active'); i = (i + 1) % slides.length; slides[i].classList.add('active'); }, 3000);
+    </script>
+
+</body>
+
+</html>
